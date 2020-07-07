@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.row {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+header, 
+section, 
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    background: #273A9F;
+    padding: 100px 0 70px;
+}
+
+header h1 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.center-container {
+    width: 80%;
+    margin: 0 10%;
+    max-width: 1300px;
+}
+
+
+.subtitle-home {
+    background: #C9DBF1;
+    padding: 30px 0;
+}
+
+
+.subtitle-home h3 {
+    width: 100%;
+    font-weight: normal;
+    font-size: 26px;
+    color: #414141;
+}
+
+.convidados {
+    width: 100%;
+}
+
+.convidados h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #414141;
+    margin: 100px 0;
+}
+
+.convidados-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-convidados {
+    width: 49%;
+    margin-bottom: 100px;
+}
+
+.desc-convidados img {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 500px;
+}
+
+.desc-convidados-info {
+    width: 60%;
+    margin: 30px 20% 0;
+}
+
+.nome-convidado {
+    font-size: 25px;
+    font-weight: bold;
+    color: #222;
+}
+
+.cargo-convidado {
+    font-weight: bold;
+    font-size: 16px;
+    color: gray;
+    margin: 5px 0 15px;
+    border-top: 1px solid #cbcbcb;
+}
+
+.descricao-convidado {
+    font-size: 18px;
+    color: gray;
+}
