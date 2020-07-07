@@ -6,54 +6,69 @@
     font-family: "Roboto", sans-serif;
 }
 
-.row {
-    width: 100%;
-    position: relative;
-    display: block;
-}
-
-header, 
-section, 
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-header {
-    background: #273A9F;
-    padding: 100px 0 70px;
-}
-
-header h1 {
-    width: 100%;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 120%;
-    color: #FFFFFF;
-    text-align: left;
-}
-
+/* containeres */
 .center-container {
     width: 80%;
     margin: 0 10%;
     max-width: 1300px;
 }
 
-
-.subtitle-home {
-    background: #C9DBF1;
-    padding: 30px 0;
+.row {
+    width: 100%;
+    position: relative;
+    display: block;
 }
 
+/* header */
+header, 
+section {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background: #91B7D5;
+    padding: 100px 0 40px;
+}
+
+header h1 {
+    width: 70%;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: left;
+    float: left;
+}
+
+.logo {
+    width: 25%;
+    float: right;
+}
+
+.logo img {
+    float: left;
+    width: 100%;
+    margin-top: -30px;
+}
+
+
+/* home */
+.subtitle-home {
+    background: #896CDB;
+    padding: 30px 0;
+}
 
 .subtitle-home h3 {
     width: 100%;
     font-weight: normal;
     font-size: 26px;
-    color: #414141;
+    color: white;
+    text-shadow: 0 0 1px white;
 }
 
+
+/* convidados */
 .convidados {
     width: 100%;
 }
@@ -106,3 +121,116 @@ header h1 {
     font-size: 18px;
     color: gray;
 }
+
+.linkedin-convidado {
+    margin-top: 15px;
+    float: left;
+}
+
+
+/* contagem */
+.contagem {
+    margin-bottom: 200px;
+}
+/* contagem */
+
+
+/* Formulário */
+.formulario {
+    background: #91B7D5;
+}
+
+.formulario .center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form {
+    background: #F4F4F4;
+    width: 500px;
+    height: 500px;
+    margin: -150px 0 250px;
+    padding: 20px;
+}
+
+.form-title {
+    width: 100%;
+    margin-bottom: 35px;
+    color: #222;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
+
+.input-container {
+    padding: 0 70px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+.input-container label,
+.input-container input {
+    display: block;
+    width: 100%;
+    
+}
+.input-container label {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    background: #FFFFFF;
+    border: 1px solid #CFCFDB;
+    border-radius: 4px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    color: gray;
+}
+
+.formulario form button {
+    background: #896CDB;
+    border-radius: 4px;
+    width: 60%;
+    height: 60px;
+    line-height: 55px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    margin: 25px 20% 20px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .7);
+}
+
+.formulario form button:hover {
+    background: white;
+    color:#896CDB;
+    border: 1px solid #896CDB;
+}
+
+.texto-spam {
+    background: rgba(248, 161, 112, 0.34);
+    width: 90%;
+    margin: 10px 5%;
+    padding: 5px;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+}
+/* Formulário */
+
+/* Footer */
+footer {
+    background: #414141;
+    padding: 30px 0 30px 5%;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+/* Footer */

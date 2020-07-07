@@ -6,20 +6,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link href='src/css/style.css' rel='stylesheet' />
     <title>Lean</title>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1306964882846241');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1306964882846241&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- Facebook Pixel Code -->
+    
+    <!-- Hotjar Tracking Code for https://itsfinance.netlify.app/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1889603,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- Hotjar Tracking Code for https://itsfinance.netlify.app/ -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171826808-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171826808-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
 </head>
 <body>
+    <!--header -->
     <header>
         <div class="center-container">
             <h1>Organize sua vida financeira e esteja preparado para o que está por vir!</h1>
+
+            <div class='logo'>
+                <img src="src/img/logo.png" />
+            </div>
         </div>
     </header>
+    <!--header -->
 
+    <!-- home -->
     <section class='subtitle-home'>
         <div class="center-container">
             <h3>Nesta live você aprenderá a organizar e separar suas finanças pessoais e profissionais, além de dicas para que o vermelho não faça parte da sua vida!</h3>
         </div>
     </section>
-
+    <!-- home -->
+    
+    <!-- convidados -->
     <section class="convidados">
         <div class="center-container">
             <h2>Convidados</h2>
@@ -32,7 +83,7 @@
                         <span class='nome-convidado row'>Nome</span>
                         <span class='cargo-convidado row'>cargo</span>
                         <span class='descricao-convidado row'>descricao</span>
-                        <button type="button">LinkedIn</button>
+                        
                         <a class='linkedin-convidado row' target="_blank" href='#'>Linkedin</a>
                     </div>
                 </div>
@@ -44,14 +95,61 @@
                         <span class='nome-convidado row'>Nome</span>
                         <span class='cargo-convidado row'>cargo</span>
                         <span class='descricao-convidado row'>descricao</span>
-                        <button type="button">LinkedIn</button>
+
                         <a class='linkedin-convidado row' target="_blank" href='#'>Linkedin</a>
                     </div>
                 </div>               
             </div>
-
         </div>
     </section> 
+    <!-- convidados -->
+
+     <!-- contagem -->
+     <section class='contagem'>
+        <div class="center-container">
+            <!--
+                Elaine, por gentileza, coloque aqui dentro dessa div, o seu contador regressivo e apague a debaixo.
+
+            -->
+            <div style='width: 80%; margin-left: 10%; border-radius: 50px; border: 1px solid red; height: 50px'></div>
+        </div>
+    </section>
+    <!-- contagem -->
+
+     <!-- formulario -->
+     <section class='formulario'>
+        <div class="center-container">
+            <form>
+                <span class='form-title'>Basta adicionar nome e e-mail para se inscrever!</span>
+                <div class='input-container'>
+                    <label>Qual é o seu nome completo?</label>
+                    <input type="text" placeholder="Digite seu nome" name='nome' />
+                </div>
+
+                <div class='input-container'>
+                    <label>Qual é o seu e-mail?</label>
+                    <input type="email" placeholder="nome@email.com" name='nome' />
+                </div>
+
+                <div class="row">
+                    <button type="button">Inscrever-se</button>
+                </div>
+
+                <div class="row">
+                    <div class="texto-spam">
+                        Fique tranquilo! Iremos enviar o link da live pelo e-mail e <b>não</b> iremos mandar nenhum <b>SPAM</b>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- home -->
+
+    <!-- rodapé -->
+    <footer>
+        <span>© 2020 Lean Finance. Todos os direitos reservados </span>
+    </footer>
+    <!-- rodapé -->
     
     <script src='src/js/script.js'></script>
 </body>
