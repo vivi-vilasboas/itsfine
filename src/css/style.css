@@ -234,3 +234,38 @@ footer {
     width: 100%;
 }
 /* Footer */
+
+
+/* responsivo - media queries */
+@media screen and (max-width: 1024px) {
+    .logo {
+        display: none;
+    }
+
+    .convidados-content {
+        display: block;
+        justify-content: unset;
+    } 
+
+    .desc-convidados {
+        width: 90%;
+        margin: 0 5% 130px;
+    }
+
+    .formulario form {
+        width: 96%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    
+    .input-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .formulario form button {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
