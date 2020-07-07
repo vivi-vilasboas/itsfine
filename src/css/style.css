@@ -6,6 +6,27 @@
     font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+    .tabela {
+     max-width:550px;
+     
+    }
+    .cont{
+        font-size: 34px !important;
+    }
+    .tabela2{
+        font-size: 20px !important;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .tabela {
+     display: none;
+    }
+  }
+
+ 
+
 /* containeres */
 .center-container {
     width: 80%;
