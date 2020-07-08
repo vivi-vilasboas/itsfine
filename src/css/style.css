@@ -321,3 +321,23 @@ footer {
         display: none;
     }
   }
+
+  /* modal */
+.modal-body{
+    color: #896CDB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #896CDB;
+    color: #DFDFDF; 
+    font-weight: bold; 
+    font-size: 20px;  
+}
+
+.modal-title{
+    color: #896CDB;
+    font-size: 40px;
+    font-weight: bold;
+}
