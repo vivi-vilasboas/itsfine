@@ -38,5 +38,21 @@ function contador(){
     setTimeout(contador, 1000);
     
   }
-  
-  contador()
+
+  /***/
+  const enviarForm = () => {
+    let nome = document.getElementById("mce-FNAME");
+    let email = document.getElementById("mce-EMAIL");
+
+    if(nome.value != "" && email.value != "") { 
+      document.getElementById("mc-embedded-subscribe-form").submit(); 
+      
+      nome.value = "";
+      email.value = ""
+    }
+  }
+
+  // init
+  (() => {
+    contador();
+  })();

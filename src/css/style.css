@@ -128,6 +128,10 @@ header h1 {
     float: left;
 }
 
+.interrogacao {
+    border: 1px solid #40C0E7;
+    padding: 30px;
+}
 
 /* contagem */
 .contagem {
