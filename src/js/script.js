@@ -65,3 +65,8 @@ const enviarForm = () => {
     email.value = ""
   }
 }
+
+function scrollToForm() {
+    var elmnt = document.getElementById("mc-embedded-subscribe-form");
+    elmnt.scrollIntoView();
+}
