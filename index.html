@@ -3,38 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="title" content="It's Fine!" />
+    <meta name="description" content="It's Fine!" />
+    <meta name="keywords" content="financeira, emprestimos... colocar keywords aqui please!" />
+    <meta name="expires" content="never" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="all, index, follow" />
+    <meta name="publisher" content="It's Fine!" />
+    <meta name="author" content="It's Fine!" />
+    <meta name="copyright" content="2020 © It's Fine!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='src/css/style.min.css' rel='stylesheet' />
-    <title>Its Fine</title>
+    <title>It's Fine</title>
 </head>
 
 <body>
-    <!-- Modal Popup de saída -->
-    <div class="mask-modal">
-        <div class="modal-content">
-            <div class="modal-header full">
-                <h5 class="modal-title">Já vai?</h5>
-                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close" onclick="scrollToForm()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body full">Tem certeza que vai deixar esse super conteúdo de fora? Se inscreva, é grátis!</div>
-
-            <div class="modal-footer full">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="scrollToForm()">Fechar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Popup de saída -->
-
     <!--header -->
     <header>
         <div class="center-container">
             <h1>Organize sua vida financeira e esteja preparado para o que está por vir!</h1>
 
             <div class='logo'>
-                <img src="src/img/logo2.png" />
+                <img alt='Its Fine' src="src/img/logo2.png" />
             </div>
         </div>
     </header>
@@ -56,7 +46,7 @@
 
             <div class='convidados-content'>
                 <div class='desc-convidados'>
-                    <img src='src/img/danielle.jpg' />
+                    <img alt='Its Fine' src='src/img/danielle.jpg' />
 
                     <div class='desc-convidados-info'>
                         <span class='nome-convidado full'>Danielle Lopes</span>
@@ -65,12 +55,12 @@
                             Especialista em investimentos e análise de resultados financeiro. Além disso, teve cargos de 
                             liderança em empresas que são referências no mercado financeiro, como o Itaú e Creditas
                         </span>
-                        <a class='linkedin-convidado full' target="_blank" href='https://www.linkedin.com/in/danielle-nicoli-lopes/'>Linkedin</a>
+                        <a rel="noopener" class='linkedin-convidado full' target="_blank" href='https://www.linkedin.com/in/danielle-nicoli-lopes/'>Linkedin</a>
                     </div>
                 </div>
 
                 <div class='desc-convidados'>
-                    <img src='src/img/1.jpg' />
+                    <img alt='Its Fine' src='src/img/1.jpg' />
 
                     <div class='desc-convidados-info full'>
                         <span class='nome-convidado full'>Caroline Vilela</span>
@@ -79,7 +69,7 @@
                             Formada em Engenharia Civil, trabalhou por alguns anos no ramo imobiliário. Hoje é especialista em canais 
                             de vendas na Creditas, referência dentro das áreas que passou dentro da empresa.
                         </span>
-                        <a class='linkedin-convidado full' target="_blank" href='https://www.linkedin.com/in/caroline-corr%C3%AAa-vilela-635b4a178/'>Linkedin</a> 
+                        <a rel="noopener" class='linkedin-convidado full' target="_blank" href='https://www.linkedin.com/in/caroline-corr%C3%AAa-vilela-635b4a178/'>Linkedin</a> 
                     </div>
                 </div>
             </div>
@@ -118,17 +108,16 @@
             <form action="https://app.us10.list-manage.com/subscribe/post?u=c4ec339a087bca398c505092b&amp;id=c5c4878635" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <span class='form-title'>Basta adicionar nome e e-mail para se inscrever!</span>
                 <div class='input-container'>
-                    <label>Qual é o seu nome completo?</label>
+                    <label for='FNAME'>Qual é o seu nome completo?</label>
                     <input type="text" placeholder="Digite seu nome" name="FNAME" id="mce-FNAME">
                 </div>
 
                 <div class='input-container'>
-                    <label>Qual é o seu e-mail?</label>
+                    <label for='EMAIL'>Qual é o seu e-mail?</label>
                     <input type="email" placeholder="nome@email.com" name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
 
                 <div class="full">
-                    
                     <button id="button-form" type="button" onclick="enviarForm()">Inscrever-se</button>
                 </div>
 
@@ -149,6 +138,26 @@
     </footer>
     <!-- rodapé -->
 
+    <!-- Modal Popup de saída -->
+    <div class="mask-modal">
+        <div class="modal-content">
+            <div class="modal-header full">
+                <h5 class="modal-title">Já vai?</h5>
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close" onclick="scrollToForm()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body full">Tem certeza que vai deixar esse super conteúdo de fora? Se inscreva, é grátis!</div>
+
+            <div class="modal-footer full">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="scrollToForm()">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Popup de saída -->
+
+
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -165,7 +174,7 @@
         fbq('init', '1306964882846241');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
+    <noscript><img alt='Its Fine' alt='Its Fine' height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1306964882846241&ev=PageView&noscript=1" />
     </noscript>
     <!-- Facebook Pixel Code -->
