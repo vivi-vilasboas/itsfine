@@ -346,6 +346,11 @@ footer {
     height: 94px;
 }
 
+.perguntas h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
 a{
     font-size: 20px;
 }
