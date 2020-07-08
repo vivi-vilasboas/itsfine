@@ -44,12 +44,12 @@ contador()
 
 //Popup de saída
 
-var contador = 0;
+var cont = 0;
 var maxContador = 1;
 
 document.addEventListener('mouseleave', function () {
-  if (contador < maxContador) {
+  if (cont < maxContador) {
     $("#exampleModal").modal('show');
-    contador += 1;
+    cont += 1;
   }
 })
