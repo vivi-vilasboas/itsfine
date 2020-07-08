@@ -275,13 +275,23 @@ footer {
 
 /* Thank you page */
 
-.principal{   
-    height: 1334px;
+.thanks footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-#cabecalho{
-    background-color: #91B7D5;;    
-    height: 310px;
+.thanks section { 
+    width: 100%;
+}
+
+.cabecalho {
+    background-color: #91B7D5;   
+    width: 100%;
+    float: left;
+    display: block;
+    justify-content: unset;
+    padding: 0px 40px;
 }
 
 /* header, section{
@@ -289,8 +299,11 @@ footer {
     justify-content: center;
 } */
 
+.logo-thanks {
+    float: left;
+}
+
 .quadrado{
-    
     position: relative;
     margin: auto;
     background-color: #FFFFFF;
@@ -307,10 +320,6 @@ footer {
     margin-left: 90px;
     width: 60%;
     margin-top: 25px;
-}
-
-#logo2{
-    margin-top: -100px;
 }
 
 .sucesso p{
@@ -485,6 +494,19 @@ a{
     .show-modal,
     .mask-modal {
         display: none!important;
+    }
+
+    .quadrado {
+        margin-top: 0;
+    }
+
+    .logo-thanks {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .thanks {
+        background: #91B7D5;
     }
 }
 
