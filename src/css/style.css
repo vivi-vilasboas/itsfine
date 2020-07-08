@@ -1,3 +1,14 @@
+/* 
+Importante!
+  Caso precise mexer em algo aqui, é necessário minificar o código, e colar no arquivo style.min.js
+  Este arquivo é apenas para dev, está em produção o arquivo minificado.
+
+  Utilize este site para fazer a minificação 
+  https://cssminifier.com/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -331,7 +342,112 @@ a{
 }
 
 
+/* Modal */
+.mask-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    justify-content: center;
+    display: none;
+    transition: all .2s ease;
+}
 
+.modal-content {
+    width: 500px;
+    height: 250px;
+    margin-top: 50px;
+    background: white;
+    border-radius: 5px;
+}
+
+.modal-header {
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+    justify-content: space-between;
+    display: flex;
+}
+
+.modal-title {
+    color: #896CDB;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    color: #896CDB;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-footer {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-footer button {
+    background-color: #896CDB;
+    color: #DFDFDF;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    margin-top: 15px;
+}
+
+.modal-footer button:hover {
+    background-color: gray;
+    color: white
+}
+
+.close {
+    background-color: transparent;
+    border: 0;
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.show-modal {
+    transition: all .2s ease;
+    display: flex;
+}
 
 /* responsivo - media queries */
 @media screen and (max-width: 1024px) {
@@ -364,6 +480,11 @@ a{
     .formulario form button {
         width: 90%;
         margin-left: 5%;
+    }
+
+    .show-modal,
+    .mask-modal {
+        display: none!important;
     }
 }
 
